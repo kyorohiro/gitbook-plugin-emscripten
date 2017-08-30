@@ -1,9 +1,9 @@
 module.exports = {
     blocks: {
-        emscripten: function(block) {
-            return {
-               url: block.kwargs.src
-           };
+        emscripten: {
+          process: function(block) {
+            return "<div>xx "+block.body.trim()+"</div>";
+           }
         }
     }
 };

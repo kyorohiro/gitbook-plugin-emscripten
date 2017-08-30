@@ -3,15 +3,11 @@
   "name": "gitbook-plugin-emscripten",
   "description": "Insert Emscripten in your pages.",
   "main": "index.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "engines": {
     "gitbook": "*"
   },
   "license": "Apache 2",
-  "scripts": {
-    "build-js": "gitbook-plugin build ./src/index.js",
-    "prepublish": "npm run build-js"
-  },
   "keywords": [
     "gitbook",
     "plugin"

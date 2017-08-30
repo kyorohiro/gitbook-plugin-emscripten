@@ -8,7 +8,9 @@ Add the below to your `book.json` file, then run `gitbook install` :
 
 ```json
 {
-    "plugins": [".......emscripten"]
+    "plugins": [
+        "myplugin@git+https://github.com/kyorohiro/gitbook-plugin-emscripten.git"
+    ]
 }
 ```
 

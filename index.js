@@ -9,9 +9,7 @@ module.exports = {
       emscripten: {
         process: function(block) {
           return
-          '<div><div class="emscripten_border">'+
-          '  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>'+
-          '</div>' +
+          '<div>'+
           '</div>';
          }
       }

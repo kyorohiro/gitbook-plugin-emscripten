@@ -9,7 +9,7 @@ module.exports = {
       emscripten: {
         process: function(block) {
 
-          return '<div>xx '+block.kwargs.js+'</div>';
+          return '<div class="emscripten_border">'+block.kwargs.js+'</div>';
          }
       }
   }

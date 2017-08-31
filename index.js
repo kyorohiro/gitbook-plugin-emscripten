@@ -83,8 +83,8 @@ module.exports = {
           +'          if (text) Module.printErr("[post-exception status] " + text);\r\n'
           +'        };\r\n'
           +'      };\r\n'
-          +'  </script>\r\n';/*
-          if(block.kwargs.mem.contains(".mem")) {
+          +'  </script>\r\n';
+          if(block.kwargs.mem.toString().contains(".mem")) {
           ret += '<script>\r\n'
           +'      (function() {\r\n'
           +'        var memoryInitializer = "'+block.kwargs.mem+'";\r\n'
@@ -105,7 +105,7 @@ module.exports = {
           +'</script>\r\n';
         } else {
           ret += '<script async type="text/javascript" src="' + block.kwargs.js+'"></script>';
-        }*/
+        }
 
           return ret;
          }

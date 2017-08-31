@@ -21,11 +21,6 @@
               "type": "string",
               "title": "xxx.js",
               "required": true
-            },
-            "mem": {
-              "type": "string",
-              "title": "xxx.mem",
-              "required": true
             }
           }
       }

@@ -8,7 +8,7 @@ In a page, Has a emscripten app.
 ~~example~~
 ~~emcc -s MODULARIZE=1  -s EXPORT_NAME="'MyEmscriptenModule'"~~
 ~~ref:~~
-~~https://github.com/kripken/emscripten/issues/3167 ~~
+~~https://github.com/kripken/emscripten/issues/3167~~
 
 
 ### How to use it?
@@ -30,6 +30,5 @@ In your markdowm
 {% emscripten js="test.js", mem="test.html.js" %}{% endemscripten %}
 ```
 
-```markdown
-{% emscripten js="test.js", mem="test.html.js", mod="Module" %}{% endemscripten %}
-```
+~~markdown~~
+~~{% emscripten js="test.js", mem="test.html.js", mod="Module" %}{% endemscripten %}~~

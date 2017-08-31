@@ -12,7 +12,8 @@ module.exports = {
           return '<div class="emscripten_border">'
           +'<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>'
           +block.kwargs.js+'</div>'
-          +'<textarea id="output" rows="8"></textarea>';
+          +'<textarea id="output" rows="8"></textarea>'
+          +'<script async type="text/javascript" src="' + block.kwargs.js+'"></script>';
          }
       }
   }

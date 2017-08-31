@@ -1,6 +1,6 @@
 module.exports = {
     website: {
-      assets: "./book",
+      assets: "./assets",
       css: [
            "emscripten.css"
       ],

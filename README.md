@@ -15,5 +15,5 @@ Add the below to your `book.json` file, then run `gitbook install` :
 ```
 
 ```markdown
-{% emscripten src="test" %}{% endemscripten %}
+{% emscripten js="test.js", mem="test.html.js" %}{% endemscripten %}
 ```

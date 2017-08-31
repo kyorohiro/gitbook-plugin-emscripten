@@ -84,7 +84,7 @@ module.exports = {
           +'        };\r\n'
           +'      };\r\n'
           +'  </script>\r\n';
-          if(block.kwargs.mem.toString().contains(".mem")) {
+          if(block.kwargs.mem.includes(".mem")) {
           ret += '<script>\r\n'
           +'      (function() {\r\n'
           +'        var memoryInitializer = "'+block.kwargs.mem+'";\r\n'

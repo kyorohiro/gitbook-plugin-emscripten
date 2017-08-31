@@ -8,7 +8,7 @@ module.exports = {
         process: function(block) {
           var mod = "Module";
           var opt = "";
-          if(block.kwargs.mod != undefined || block.kwargs.mod != "" || block.kwargs.mod != null) {
+          if(block.kwargs.mod != undefined && block.kwargs.mod != "" && block.kwargs.mod != null) {
             mod = block.kwargs.mod;
             opt = block.kwargs.mod;
           }

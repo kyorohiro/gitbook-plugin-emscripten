@@ -3,15 +3,12 @@ Emscripten app in your book
 
 ### Restriction
 In a page, Has a emscripten app.
-If change module name. your page has some app.
 
-example
-```
-emcc -s MODULARIZE=1  -s EXPORT_NAME="'MyEmscriptenModule'"
-```
-ref:
-
-https://github.com/kripken/emscripten/issues/3167
+~~If change module name. your page has some app.~~
+~~example~~
+~~emcc -s MODULARIZE=1  -s EXPORT_NAME="'MyEmscriptenModule'"~~
+~~ref:~~
+~~https://github.com/kripken/emscripten/issues/3167 ~~
 
 
 ### How to use it?

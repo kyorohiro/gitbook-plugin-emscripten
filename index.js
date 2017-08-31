@@ -8,7 +8,7 @@ module.exports = {
   blocks: {
       emscripten: {
         process: function(block) {
-          return "<div>xx "+block.body.trim()+"</div>";
+          return "<div>xx "+block.kwargs.js+"</div>";
          }
       }
   }

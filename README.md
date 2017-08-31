@@ -2,6 +2,10 @@ test..
 Emscripten app in your book
 ==============
 
+### Restriction
+In a page, a emscripten app.
+
+
 ### How to use it?
 
 Add the below to your `book.json` file, then run `gitbook install` :

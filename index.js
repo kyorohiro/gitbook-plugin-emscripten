@@ -1,8 +1,7 @@
 module.exports = {
   website: {
     assets: "./assets",
-    js: ["emscripten.js"],
-    css: ["emscripten.css"],
+    css: ["emscripten.css"]
   },
   blocks: {
       emscripten: {

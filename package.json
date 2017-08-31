@@ -15,19 +15,24 @@
   "gitbook": {
     "blocks": {
       "emscripten": {
-          "title": "Emscripten Tag",
-          "properties": {
-            "js": {
-              "type": "string",
-              "title": "xxx.js",
-              "required": true
-            },
-            "mem": {
-              "type": "string",
-              "title": "xxx.mem",
-              "required": true
-            }
+        "title": "Emscripten Tag",
+        "properties": {
+          "js": {
+            "type": "string",
+            "title": "xxx.js",
+            "required": true
+          },
+          "mem": {
+            "type": "string",
+            "title": "xxx.mem",
+            "required": true
+          },
+          "mod": {
+            "type": "string",
+            "title": "Module Name",
+            "required": false
           }
+        }
       }
     }
   }

@@ -1,9 +1,8 @@
-test..
 Emscripten app in your book
 ==============
 
 ### Restriction
-In a page, a emscripten app.
+In a page, Has a emscripten app.
 
 
 ### How to use it?

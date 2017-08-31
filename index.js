@@ -7,7 +7,7 @@ module.exports = {
   blocks: {
       emscripten: {
         process: function(block) {
-          return '<div class="spinner" id="spinner"></div>\r\n'
+          var ret = '<div class="spinner" id="spinner"></div>\r\n'
           +'<div class="emscripten" id="status">Downloading...</div>\r\n'
           +'<div class="emscripten">\r\n'
           +'  <progress value="0" max="100" id="progress" hidden=1></progress>\r\n'
@@ -83,8 +83,9 @@ module.exports = {
           +'          if (text) Module.printErr("[post-exception status] " + text);\r\n'
           +'        };\r\n'
           +'      };\r\n'
-          +'  </script>\r\n'
-          +'<script>\r\n'
+          +'  </script>\r\n';
+          if(block.kwargs.mem.contains(".mem")) {
+          ret += '<script>\r\n'
           +'      (function() {\r\n'
           +'        var memoryInitializer = "'+block.kwargs.mem+'";\r\n'
           +'        if (typeof Module["locateFile"] === "function") {\r\n'
@@ -102,17 +103,11 @@ module.exports = {
           +'      document.body.appendChild(script);\r\n'
           +'\r\n'
           +'</script>\r\n';
-          /*
-          return '<div class="spinner" id="spinner"></div>'
-          +'<div class="emscripten" id="status">Downloading...</div>'
-          +'<div class="emscripten">'
-          +'  <progress value="0" max="100" id="progress" hidden=1></progress>'
-          +'</div>'
-          +'<div class="emscripten_border">'
-          +'<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>'
-          +block.kwargs.js+'</div>'
-          +'<textarea id="output" rows="8"></textarea>'
-          +'<script async type="text/javascript" src="' + block.kwargs.js+'"></script>';*/
+        } else {
+          ret += '<script async type="text/javascript" src="' + block.kwargs.js+'"></script>';
+        }
+
+          return ret;
          }
       }
   }
